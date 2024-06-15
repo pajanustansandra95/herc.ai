@@ -115,7 +115,7 @@
   "homepage": "https://discord.gg/luppux",
   "dependencies": {
     "axios": "^1.6.2",
-    "express": "^4.17.2"
-     "hercai": "^12.2.0"
+    "express": "^4.17.2",
+    "hercai": "^12.2.0"
   }
 }
