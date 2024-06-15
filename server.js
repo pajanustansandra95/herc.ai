@@ -15,9 +15,14 @@ app.get('/api/gpt4', async (req, res) => {
     const { model, content } = req.query;
 
     try {
+        if (!model || !content) {
+            throw new Error('Model and content parameters are required.');
+        }
+
         const response = await herc.question({ model, content });
         res.json(response);
     } catch (error) {
+        console.error('Error in /api/gpt4 endpoint:', error);
         res.status(500).json({ error: error.message });
     }
 });
