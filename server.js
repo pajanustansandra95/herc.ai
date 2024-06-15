@@ -22,6 +22,11 @@ app.get('/api/gpt4', async (req, res) => {
     }
 });
 
+// Handle undefined routes
+app.use((req, res) => {
+    res.status(404).send('404 - Not Found');
+});
+
 // Start the server
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
