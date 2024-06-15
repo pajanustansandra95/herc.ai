@@ -116,5 +116,6 @@
   "dependencies": {
     "axios": "^1.6.2",
     "express": "^4.17.2"
+     "hercai": "^1.0.0"
   }
 }
